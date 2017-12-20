@@ -1,0 +1,1582 @@
+{
+    "metrics": [
+        {
+            "name": "java.Valid",
+            "description": "java.lang:type=MemoryPool,name=Metaspace / Valid",
+            "mBeanName": "java.lang:type=MemoryPool,name=Metaspace",
+            "mBeanAttributeName": "Valid"
+        },
+        {
+            "name": "java.Usage[init]",
+            "description": "java.lang:type=MemoryPool,name=Metaspace / Usage",
+            "mBeanName": "java.lang:type=MemoryPool,name=Metaspace",
+            "mBeanAttributeName": "Usage",
+            "mBeanCompositeDataItem": "init",
+        },
+        {
+            "name": "java.Usage[committed]",
+            "description": "java.lang:type=MemoryPool,name=Metaspace / Usage",
+            "mBeanName": "java.lang:type=MemoryPool,name=Metaspace",
+            "mBeanAttributeName": "Usage",
+            "mBeanCompositeDataItem": "committed",
+        },
+        {
+            "name": "java.Usage[max]",
+            "description": "java.lang:type=MemoryPool,name=Metaspace / Usage",
+            "mBeanName": "java.lang:type=MemoryPool,name=Metaspace",
+            "mBeanAttributeName": "Usage",
+            "mBeanCompositeDataItem": "max",
+        },
+        {
+            "name": "java.Usage[used]",
+            "description": "java.lang:type=MemoryPool,name=Metaspace / Usage",
+            "mBeanName": "java.lang:type=MemoryPool,name=Metaspace",
+            "mBeanAttributeName": "Usage",
+            "mBeanCompositeDataItem": "used",
+        },
+        {
+            "name": "java.PeakUsage[init]",
+            "description": "java.lang:type=MemoryPool,name=Metaspace / PeakUsage",
+            "mBeanName": "java.lang:type=MemoryPool,name=Metaspace",
+            "mBeanAttributeName": "PeakUsage",
+            "mBeanCompositeDataItem": "init",
+        },
+        {
+            "name": "java.PeakUsage[committed]",
+            "description": "java.lang:type=MemoryPool,name=Metaspace / PeakUsage",
+            "mBeanName": "java.lang:type=MemoryPool,name=Metaspace",
+            "mBeanAttributeName": "PeakUsage",
+            "mBeanCompositeDataItem": "committed",
+        },
+        {
+            "name": "java.PeakUsage[max]",
+            "description": "java.lang:type=MemoryPool,name=Metaspace / PeakUsage",
+            "mBeanName": "java.lang:type=MemoryPool,name=Metaspace",
+            "mBeanAttributeName": "PeakUsage",
+            "mBeanCompositeDataItem": "max",
+        },
+        {
+            "name": "java.PeakUsage[used]",
+            "description": "java.lang:type=MemoryPool,name=Metaspace / PeakUsage",
+            "mBeanName": "java.lang:type=MemoryPool,name=Metaspace",
+            "mBeanAttributeName": "PeakUsage",
+            "mBeanCompositeDataItem": "used",
+        },
+        {
+            "name": "java.MemoryManagerNames",
+            "description": "java.lang:type=MemoryPool,name=Metaspace / MemoryManagerNames",
+            "mBeanName": "java.lang:type=MemoryPool,name=Metaspace",
+            "mBeanAttributeName": "MemoryManagerNames"
+        },
+        {
+            "name": "java.UsageThreshold",
+            "description": "java.lang:type=MemoryPool,name=Metaspace / UsageThreshold",
+            "mBeanName": "java.lang:type=MemoryPool,name=Metaspace",
+            "mBeanAttributeName": "UsageThreshold"
+        },
+        {
+            "name": "java.UsageThresholdExceeded",
+            "description": "java.lang:type=MemoryPool,name=Metaspace / UsageThresholdExceeded",
+            "mBeanName": "java.lang:type=MemoryPool,name=Metaspace",
+            "mBeanAttributeName": "UsageThresholdExceeded"
+        },
+        {
+            "name": "java.UsageThresholdCount",
+            "description": "java.lang:type=MemoryPool,name=Metaspace / UsageThresholdCount",
+            "mBeanName": "java.lang:type=MemoryPool,name=Metaspace",
+            "mBeanAttributeName": "UsageThresholdCount"
+        },
+        {
+            "name": "java.UsageThresholdSupported",
+            "description": "java.lang:type=MemoryPool,name=Metaspace / UsageThresholdSupported",
+            "mBeanName": "java.lang:type=MemoryPool,name=Metaspace",
+            "mBeanAttributeName": "UsageThresholdSupported"
+        },
+        {
+            "name": "java.CollectionUsageThresholdSupported",
+            "description": "java.lang:type=MemoryPool,name=Metaspace / CollectionUsageThresholdSupported",
+            "mBeanName": "java.lang:type=MemoryPool,name=Metaspace",
+            "mBeanAttributeName": "CollectionUsageThresholdSupported"
+        },
+        {
+            "name": "java.Name",
+            "description": "java.lang:type=MemoryPool,name=Metaspace / Name",
+            "mBeanName": "java.lang:type=MemoryPool,name=Metaspace",
+            "mBeanAttributeName": "Name"
+        },
+        {
+            "name": "java.Type",
+            "description": "java.lang:type=MemoryPool,name=Metaspace / Type",
+            "mBeanName": "java.lang:type=MemoryPool,name=Metaspace",
+            "mBeanAttributeName": "Type"
+        },
+        {
+            "name": "java.ObjectName",
+            "description": "java.lang:type=MemoryPool,name=Metaspace / ObjectName",
+            "mBeanName": "java.lang:type=MemoryPool,name=Metaspace",
+            "mBeanAttributeName": "ObjectName"
+        },
+        {
+            "name": "java.Valid",
+            "description": "java.lang:type=MemoryPool,name=PS Old Gen / Valid",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Old Gen",
+            "mBeanAttributeName": "Valid"
+        },
+        {
+            "name": "java.Usage[init]",
+            "description": "java.lang:type=MemoryPool,name=PS Old Gen / Usage",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Old Gen",
+            "mBeanAttributeName": "Usage",
+            "mBeanCompositeDataItem": "init",
+        },
+        {
+            "name": "java.Usage[committed]",
+            "description": "java.lang:type=MemoryPool,name=PS Old Gen / Usage",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Old Gen",
+            "mBeanAttributeName": "Usage",
+            "mBeanCompositeDataItem": "committed",
+        },
+        {
+            "name": "java.Usage[max]",
+            "description": "java.lang:type=MemoryPool,name=PS Old Gen / Usage",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Old Gen",
+            "mBeanAttributeName": "Usage",
+            "mBeanCompositeDataItem": "max",
+        },
+        {
+            "name": "java.Usage[used]",
+            "description": "java.lang:type=MemoryPool,name=PS Old Gen / Usage",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Old Gen",
+            "mBeanAttributeName": "Usage",
+            "mBeanCompositeDataItem": "used",
+        },
+        {
+            "name": "java.PeakUsage[init]",
+            "description": "java.lang:type=MemoryPool,name=PS Old Gen / PeakUsage",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Old Gen",
+            "mBeanAttributeName": "PeakUsage",
+            "mBeanCompositeDataItem": "init",
+        },
+        {
+            "name": "java.PeakUsage[committed]",
+            "description": "java.lang:type=MemoryPool,name=PS Old Gen / PeakUsage",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Old Gen",
+            "mBeanAttributeName": "PeakUsage",
+            "mBeanCompositeDataItem": "committed",
+        },
+        {
+            "name": "java.PeakUsage[max]",
+            "description": "java.lang:type=MemoryPool,name=PS Old Gen / PeakUsage",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Old Gen",
+            "mBeanAttributeName": "PeakUsage",
+            "mBeanCompositeDataItem": "max",
+        },
+        {
+            "name": "java.PeakUsage[used]",
+            "description": "java.lang:type=MemoryPool,name=PS Old Gen / PeakUsage",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Old Gen",
+            "mBeanAttributeName": "PeakUsage",
+            "mBeanCompositeDataItem": "used",
+        },
+        {
+            "name": "java.MemoryManagerNames",
+            "description": "java.lang:type=MemoryPool,name=PS Old Gen / MemoryManagerNames",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Old Gen",
+            "mBeanAttributeName": "MemoryManagerNames"
+        },
+        {
+            "name": "java.UsageThreshold",
+            "description": "java.lang:type=MemoryPool,name=PS Old Gen / UsageThreshold",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Old Gen",
+            "mBeanAttributeName": "UsageThreshold"
+        },
+        {
+            "name": "java.UsageThresholdExceeded",
+            "description": "java.lang:type=MemoryPool,name=PS Old Gen / UsageThresholdExceeded",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Old Gen",
+            "mBeanAttributeName": "UsageThresholdExceeded"
+        },
+        {
+            "name": "java.UsageThresholdCount",
+            "description": "java.lang:type=MemoryPool,name=PS Old Gen / UsageThresholdCount",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Old Gen",
+            "mBeanAttributeName": "UsageThresholdCount"
+        },
+        {
+            "name": "java.UsageThresholdSupported",
+            "description": "java.lang:type=MemoryPool,name=PS Old Gen / UsageThresholdSupported",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Old Gen",
+            "mBeanAttributeName": "UsageThresholdSupported"
+        },
+        {
+            "name": "java.CollectionUsageThreshold",
+            "description": "java.lang:type=MemoryPool,name=PS Old Gen / CollectionUsageThreshold",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Old Gen",
+            "mBeanAttributeName": "CollectionUsageThreshold"
+        },
+        {
+            "name": "java.CollectionUsageThresholdExceeded",
+            "description": "java.lang:type=MemoryPool,name=PS Old Gen / CollectionUsageThresholdExceeded",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Old Gen",
+            "mBeanAttributeName": "CollectionUsageThresholdExceeded"
+        },
+        {
+            "name": "java.CollectionUsageThresholdCount",
+            "description": "java.lang:type=MemoryPool,name=PS Old Gen / CollectionUsageThresholdCount",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Old Gen",
+            "mBeanAttributeName": "CollectionUsageThresholdCount"
+        },
+        {
+            "name": "java.CollectionUsage[init]",
+            "description": "java.lang:type=MemoryPool,name=PS Old Gen / CollectionUsage",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Old Gen",
+            "mBeanAttributeName": "CollectionUsage",
+            "mBeanCompositeDataItem": "init",
+        },
+        {
+            "name": "java.CollectionUsage[committed]",
+            "description": "java.lang:type=MemoryPool,name=PS Old Gen / CollectionUsage",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Old Gen",
+            "mBeanAttributeName": "CollectionUsage",
+            "mBeanCompositeDataItem": "committed",
+        },
+        {
+            "name": "java.CollectionUsage[max]",
+            "description": "java.lang:type=MemoryPool,name=PS Old Gen / CollectionUsage",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Old Gen",
+            "mBeanAttributeName": "CollectionUsage",
+            "mBeanCompositeDataItem": "max",
+        },
+        {
+            "name": "java.CollectionUsage[used]",
+            "description": "java.lang:type=MemoryPool,name=PS Old Gen / CollectionUsage",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Old Gen",
+            "mBeanAttributeName": "CollectionUsage",
+            "mBeanCompositeDataItem": "used",
+        },
+        {
+            "name": "java.CollectionUsageThresholdSupported",
+            "description": "java.lang:type=MemoryPool,name=PS Old Gen / CollectionUsageThresholdSupported",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Old Gen",
+            "mBeanAttributeName": "CollectionUsageThresholdSupported"
+        },
+        {
+            "name": "java.Name",
+            "description": "java.lang:type=MemoryPool,name=PS Old Gen / Name",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Old Gen",
+            "mBeanAttributeName": "Name"
+        },
+        {
+            "name": "java.Type",
+            "description": "java.lang:type=MemoryPool,name=PS Old Gen / Type",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Old Gen",
+            "mBeanAttributeName": "Type"
+        },
+        {
+            "name": "java.ObjectName",
+            "description": "java.lang:type=MemoryPool,name=PS Old Gen / ObjectName",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Old Gen",
+            "mBeanAttributeName": "ObjectName"
+        },
+        {
+            "name": "java.LastGcInfo[duration]",
+            "description": "java.lang:type=GarbageCollector,name=PS Scavenge / LastGcInfo",
+            "mBeanName": "java.lang:type=GarbageCollector,name=PS Scavenge",
+            "mBeanAttributeName": "LastGcInfo",
+            "mBeanCompositeDataItem": "duration",
+        },
+        {
+            "name": "java.LastGcInfo[memoryUsageBeforeGc]",
+            "description": "java.lang:type=GarbageCollector,name=PS Scavenge / LastGcInfo",
+            "mBeanName": "java.lang:type=GarbageCollector,name=PS Scavenge",
+            "mBeanAttributeName": "LastGcInfo",
+            "mBeanCompositeDataItem": "memoryUsageBeforeGc",
+        },
+        {
+            "name": "java.LastGcInfo[GcThreadCount]",
+            "description": "java.lang:type=GarbageCollector,name=PS Scavenge / LastGcInfo",
+            "mBeanName": "java.lang:type=GarbageCollector,name=PS Scavenge",
+            "mBeanAttributeName": "LastGcInfo",
+            "mBeanCompositeDataItem": "GcThreadCount",
+        },
+        {
+            "name": "java.LastGcInfo[startTime]",
+            "description": "java.lang:type=GarbageCollector,name=PS Scavenge / LastGcInfo",
+            "mBeanName": "java.lang:type=GarbageCollector,name=PS Scavenge",
+            "mBeanAttributeName": "LastGcInfo",
+            "mBeanCompositeDataItem": "startTime",
+        },
+        {
+            "name": "java.LastGcInfo[endTime]",
+            "description": "java.lang:type=GarbageCollector,name=PS Scavenge / LastGcInfo",
+            "mBeanName": "java.lang:type=GarbageCollector,name=PS Scavenge",
+            "mBeanAttributeName": "LastGcInfo",
+            "mBeanCompositeDataItem": "endTime",
+        },
+        {
+            "name": "java.LastGcInfo[id]",
+            "description": "java.lang:type=GarbageCollector,name=PS Scavenge / LastGcInfo",
+            "mBeanName": "java.lang:type=GarbageCollector,name=PS Scavenge",
+            "mBeanAttributeName": "LastGcInfo",
+            "mBeanCompositeDataItem": "id",
+        },
+        {
+            "name": "java.LastGcInfo[memoryUsageAfterGc]",
+            "description": "java.lang:type=GarbageCollector,name=PS Scavenge / LastGcInfo",
+            "mBeanName": "java.lang:type=GarbageCollector,name=PS Scavenge",
+            "mBeanAttributeName": "LastGcInfo",
+            "mBeanCompositeDataItem": "memoryUsageAfterGc",
+        },
+        {
+            "name": "java.CollectionCount",
+            "description": "java.lang:type=GarbageCollector,name=PS Scavenge / CollectionCount",
+            "mBeanName": "java.lang:type=GarbageCollector,name=PS Scavenge",
+            "mBeanAttributeName": "CollectionCount"
+        },
+        {
+            "name": "java.CollectionTime",
+            "description": "java.lang:type=GarbageCollector,name=PS Scavenge / CollectionTime",
+            "mBeanName": "java.lang:type=GarbageCollector,name=PS Scavenge",
+            "mBeanAttributeName": "CollectionTime"
+        },
+        {
+            "name": "java.Valid",
+            "description": "java.lang:type=GarbageCollector,name=PS Scavenge / Valid",
+            "mBeanName": "java.lang:type=GarbageCollector,name=PS Scavenge",
+            "mBeanAttributeName": "Valid"
+        },
+        {
+            "name": "java.MemoryPoolNames",
+            "description": "java.lang:type=GarbageCollector,name=PS Scavenge / MemoryPoolNames",
+            "mBeanName": "java.lang:type=GarbageCollector,name=PS Scavenge",
+            "mBeanAttributeName": "MemoryPoolNames"
+        },
+        {
+            "name": "java.Name",
+            "description": "java.lang:type=GarbageCollector,name=PS Scavenge / Name",
+            "mBeanName": "java.lang:type=GarbageCollector,name=PS Scavenge",
+            "mBeanAttributeName": "Name"
+        },
+        {
+            "name": "java.ObjectName",
+            "description": "java.lang:type=GarbageCollector,name=PS Scavenge / ObjectName",
+            "mBeanName": "java.lang:type=GarbageCollector,name=PS Scavenge",
+            "mBeanAttributeName": "ObjectName"
+        },
+        {
+            "name": "java.Valid",
+            "description": "java.lang:type=MemoryPool,name=PS Eden Space / Valid",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Eden Space",
+            "mBeanAttributeName": "Valid"
+        },
+        {
+            "name": "java.Usage[init]",
+            "description": "java.lang:type=MemoryPool,name=PS Eden Space / Usage",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Eden Space",
+            "mBeanAttributeName": "Usage",
+            "mBeanCompositeDataItem": "init",
+        },
+        {
+            "name": "java.Usage[committed]",
+            "description": "java.lang:type=MemoryPool,name=PS Eden Space / Usage",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Eden Space",
+            "mBeanAttributeName": "Usage",
+            "mBeanCompositeDataItem": "committed",
+        },
+        {
+            "name": "java.Usage[max]",
+            "description": "java.lang:type=MemoryPool,name=PS Eden Space / Usage",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Eden Space",
+            "mBeanAttributeName": "Usage",
+            "mBeanCompositeDataItem": "max",
+        },
+        {
+            "name": "java.Usage[used]",
+            "description": "java.lang:type=MemoryPool,name=PS Eden Space / Usage",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Eden Space",
+            "mBeanAttributeName": "Usage",
+            "mBeanCompositeDataItem": "used",
+        },
+        {
+            "name": "java.PeakUsage[init]",
+            "description": "java.lang:type=MemoryPool,name=PS Eden Space / PeakUsage",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Eden Space",
+            "mBeanAttributeName": "PeakUsage",
+            "mBeanCompositeDataItem": "init",
+        },
+        {
+            "name": "java.PeakUsage[committed]",
+            "description": "java.lang:type=MemoryPool,name=PS Eden Space / PeakUsage",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Eden Space",
+            "mBeanAttributeName": "PeakUsage",
+            "mBeanCompositeDataItem": "committed",
+        },
+        {
+            "name": "java.PeakUsage[max]",
+            "description": "java.lang:type=MemoryPool,name=PS Eden Space / PeakUsage",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Eden Space",
+            "mBeanAttributeName": "PeakUsage",
+            "mBeanCompositeDataItem": "max",
+        },
+        {
+            "name": "java.PeakUsage[used]",
+            "description": "java.lang:type=MemoryPool,name=PS Eden Space / PeakUsage",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Eden Space",
+            "mBeanAttributeName": "PeakUsage",
+            "mBeanCompositeDataItem": "used",
+        },
+        {
+            "name": "java.MemoryManagerNames",
+            "description": "java.lang:type=MemoryPool,name=PS Eden Space / MemoryManagerNames",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Eden Space",
+            "mBeanAttributeName": "MemoryManagerNames"
+        },
+        {
+            "name": "java.UsageThresholdSupported",
+            "description": "java.lang:type=MemoryPool,name=PS Eden Space / UsageThresholdSupported",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Eden Space",
+            "mBeanAttributeName": "UsageThresholdSupported"
+        },
+        {
+            "name": "java.CollectionUsageThreshold",
+            "description": "java.lang:type=MemoryPool,name=PS Eden Space / CollectionUsageThreshold",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Eden Space",
+            "mBeanAttributeName": "CollectionUsageThreshold"
+        },
+        {
+            "name": "java.CollectionUsageThresholdExceeded",
+            "description": "java.lang:type=MemoryPool,name=PS Eden Space / CollectionUsageThresholdExceeded",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Eden Space",
+            "mBeanAttributeName": "CollectionUsageThresholdExceeded"
+        },
+        {
+            "name": "java.CollectionUsageThresholdCount",
+            "description": "java.lang:type=MemoryPool,name=PS Eden Space / CollectionUsageThresholdCount",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Eden Space",
+            "mBeanAttributeName": "CollectionUsageThresholdCount"
+        },
+        {
+            "name": "java.CollectionUsage[init]",
+            "description": "java.lang:type=MemoryPool,name=PS Eden Space / CollectionUsage",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Eden Space",
+            "mBeanAttributeName": "CollectionUsage",
+            "mBeanCompositeDataItem": "init",
+        },
+        {
+            "name": "java.CollectionUsage[committed]",
+            "description": "java.lang:type=MemoryPool,name=PS Eden Space / CollectionUsage",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Eden Space",
+            "mBeanAttributeName": "CollectionUsage",
+            "mBeanCompositeDataItem": "committed",
+        },
+        {
+            "name": "java.CollectionUsage[max]",
+            "description": "java.lang:type=MemoryPool,name=PS Eden Space / CollectionUsage",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Eden Space",
+            "mBeanAttributeName": "CollectionUsage",
+            "mBeanCompositeDataItem": "max",
+        },
+        {
+            "name": "java.CollectionUsage[used]",
+            "description": "java.lang:type=MemoryPool,name=PS Eden Space / CollectionUsage",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Eden Space",
+            "mBeanAttributeName": "CollectionUsage",
+            "mBeanCompositeDataItem": "used",
+        },
+        {
+            "name": "java.CollectionUsageThresholdSupported",
+            "description": "java.lang:type=MemoryPool,name=PS Eden Space / CollectionUsageThresholdSupported",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Eden Space",
+            "mBeanAttributeName": "CollectionUsageThresholdSupported"
+        },
+        {
+            "name": "java.Name",
+            "description": "java.lang:type=MemoryPool,name=PS Eden Space / Name",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Eden Space",
+            "mBeanAttributeName": "Name"
+        },
+        {
+            "name": "java.Type",
+            "description": "java.lang:type=MemoryPool,name=PS Eden Space / Type",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Eden Space",
+            "mBeanAttributeName": "Type"
+        },
+        {
+            "name": "java.ObjectName",
+            "description": "java.lang:type=MemoryPool,name=PS Eden Space / ObjectName",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Eden Space",
+            "mBeanAttributeName": "ObjectName"
+        },
+        {
+            "name": "JMImplementation:type=MBeanServerDelegate.MBeanServerId",
+            "description": "JMImplementation:type=MBeanServerDelegate / MBeanServerId",
+            "mBeanName": "JMImplementation:type=MBeanServerDelegate",
+            "mBeanAttributeName": "MBeanServerId"
+        },
+        {
+            "name": "JMImplementation:type=MBeanServerDelegate.SpecificationName",
+            "description": "JMImplementation:type=MBeanServerDelegate / SpecificationName",
+            "mBeanName": "JMImplementation:type=MBeanServerDelegate",
+            "mBeanAttributeName": "SpecificationName"
+        },
+        {
+            "name": "JMImplementation:type=MBeanServerDelegate.SpecificationVersion",
+            "description": "JMImplementation:type=MBeanServerDelegate / SpecificationVersion",
+            "mBeanName": "JMImplementation:type=MBeanServerDelegate",
+            "mBeanAttributeName": "SpecificationVersion"
+        },
+        {
+            "name": "JMImplementation:type=MBeanServerDelegate.SpecificationVendor",
+            "description": "JMImplementation:type=MBeanServerDelegate / SpecificationVendor",
+            "mBeanName": "JMImplementation:type=MBeanServerDelegate",
+            "mBeanAttributeName": "SpecificationVendor"
+        },
+        {
+            "name": "JMImplementation:type=MBeanServerDelegate.ImplementationName",
+            "description": "JMImplementation:type=MBeanServerDelegate / ImplementationName",
+            "mBeanName": "JMImplementation:type=MBeanServerDelegate",
+            "mBeanAttributeName": "ImplementationName"
+        },
+        {
+            "name": "JMImplementation:type=MBeanServerDelegate.ImplementationVersion",
+            "description": "JMImplementation:type=MBeanServerDelegate / ImplementationVersion",
+            "mBeanName": "JMImplementation:type=MBeanServerDelegate",
+            "mBeanAttributeName": "ImplementationVersion"
+        },
+        {
+            "name": "JMImplementation:type=MBeanServerDelegate.ImplementationVendor",
+            "description": "JMImplementation:type=MBeanServerDelegate / ImplementationVendor",
+            "mBeanName": "JMImplementation:type=MBeanServerDelegate",
+            "mBeanAttributeName": "ImplementationVendor"
+        },
+        {
+            "name": "java.BootClassPathSupported",
+            "description": "java.lang:type=Runtime / BootClassPathSupported",
+            "mBeanName": "java.lang:type=Runtime",
+            "mBeanAttributeName": "BootClassPathSupported"
+        },
+        {
+            "name": "java.VmName",
+            "description": "java.lang:type=Runtime / VmName",
+            "mBeanName": "java.lang:type=Runtime",
+            "mBeanAttributeName": "VmName"
+        },
+        {
+            "name": "java.VmVendor",
+            "description": "java.lang:type=Runtime / VmVendor",
+            "mBeanName": "java.lang:type=Runtime",
+            "mBeanAttributeName": "VmVendor"
+        },
+        {
+            "name": "java.VmVersion",
+            "description": "java.lang:type=Runtime / VmVersion",
+            "mBeanName": "java.lang:type=Runtime",
+            "mBeanAttributeName": "VmVersion"
+        },
+        {
+            "name": "java.LibraryPath",
+            "description": "java.lang:type=Runtime / LibraryPath",
+            "mBeanName": "java.lang:type=Runtime",
+            "mBeanAttributeName": "LibraryPath"
+        },
+        {
+            "name": "java.BootClassPath",
+            "description": "java.lang:type=Runtime / BootClassPath",
+            "mBeanName": "java.lang:type=Runtime",
+            "mBeanAttributeName": "BootClassPath"
+        },
+        {
+            "name": "java.Uptime",
+            "description": "java.lang:type=Runtime / Uptime",
+            "mBeanName": "java.lang:type=Runtime",
+            "mBeanAttributeName": "Uptime"
+        },
+        {
+            "name": "java.StartTime",
+            "description": "java.lang:type=Runtime / StartTime",
+            "mBeanName": "java.lang:type=Runtime",
+            "mBeanAttributeName": "StartTime"
+        },
+        {
+            "name": "java.SpecName",
+            "description": "java.lang:type=Runtime / SpecName",
+            "mBeanName": "java.lang:type=Runtime",
+            "mBeanAttributeName": "SpecName"
+        },
+        {
+            "name": "java.SpecVendor",
+            "description": "java.lang:type=Runtime / SpecVendor",
+            "mBeanName": "java.lang:type=Runtime",
+            "mBeanAttributeName": "SpecVendor"
+        },
+        {
+            "name": "java.SpecVersion",
+            "description": "java.lang:type=Runtime / SpecVersion",
+            "mBeanName": "java.lang:type=Runtime",
+            "mBeanAttributeName": "SpecVersion"
+        },
+        {
+            "name": "java.ManagementSpecVersion",
+            "description": "java.lang:type=Runtime / ManagementSpecVersion",
+            "mBeanName": "java.lang:type=Runtime",
+            "mBeanAttributeName": "ManagementSpecVersion"
+        },
+        {
+            "name": "java.InputArguments",
+            "description": "java.lang:type=Runtime / InputArguments",
+            "mBeanName": "java.lang:type=Runtime",
+            "mBeanAttributeName": "InputArguments"
+        },
+        {
+            "name": "java.SystemProperties[value]",
+            "description": "java.lang:type=Runtime / SystemProperties",
+            "mBeanName": "java.lang:type=Runtime",
+            "mBeanAttributeName": "SystemProperties",
+            "mBeanCompositeDataItem": "value",
+        },
+        {
+            "name": "java.SystemProperties[key]",
+            "description": "java.lang:type=Runtime / SystemProperties",
+            "mBeanName": "java.lang:type=Runtime",
+            "mBeanAttributeName": "SystemProperties",
+            "mBeanCompositeDataItem": "key",
+        },
+        {
+            "name": "java.Name",
+            "description": "java.lang:type=Runtime / Name",
+            "mBeanName": "java.lang:type=Runtime",
+            "mBeanAttributeName": "Name"
+        },
+        {
+            "name": "java.ClassPath",
+            "description": "java.lang:type=Runtime / ClassPath",
+            "mBeanName": "java.lang:type=Runtime",
+            "mBeanAttributeName": "ClassPath"
+        },
+        {
+            "name": "java.ObjectName",
+            "description": "java.lang:type=Runtime / ObjectName",
+            "mBeanName": "java.lang:type=Runtime",
+            "mBeanAttributeName": "ObjectName"
+        },
+        {
+            "name": "java.ThreadAllocatedMemorySupported",
+            "description": "java.lang:type=Threading / ThreadAllocatedMemorySupported",
+            "mBeanName": "java.lang:type=Threading",
+            "mBeanAttributeName": "ThreadAllocatedMemorySupported"
+        },
+        {
+            "name": "java.ThreadAllocatedMemoryEnabled",
+            "description": "java.lang:type=Threading / ThreadAllocatedMemoryEnabled",
+            "mBeanName": "java.lang:type=Threading",
+            "mBeanAttributeName": "ThreadAllocatedMemoryEnabled"
+        },
+        {
+            "name": "java.ThreadContentionMonitoringEnabled",
+            "description": "java.lang:type=Threading / ThreadContentionMonitoringEnabled",
+            "mBeanName": "java.lang:type=Threading",
+            "mBeanAttributeName": "ThreadContentionMonitoringEnabled"
+        },
+        {
+            "name": "java.ThreadContentionMonitoringSupported",
+            "description": "java.lang:type=Threading / ThreadContentionMonitoringSupported",
+            "mBeanName": "java.lang:type=Threading",
+            "mBeanAttributeName": "ThreadContentionMonitoringSupported"
+        },
+        {
+            "name": "java.CurrentThreadCpuTimeSupported",
+            "description": "java.lang:type=Threading / CurrentThreadCpuTimeSupported",
+            "mBeanName": "java.lang:type=Threading",
+            "mBeanAttributeName": "CurrentThreadCpuTimeSupported"
+        },
+        {
+            "name": "java.ObjectMonitorUsageSupported",
+            "description": "java.lang:type=Threading / ObjectMonitorUsageSupported",
+            "mBeanName": "java.lang:type=Threading",
+            "mBeanAttributeName": "ObjectMonitorUsageSupported"
+        },
+        {
+            "name": "java.SynchronizerUsageSupported",
+            "description": "java.lang:type=Threading / SynchronizerUsageSupported",
+            "mBeanName": "java.lang:type=Threading",
+            "mBeanAttributeName": "SynchronizerUsageSupported"
+        },
+        {
+            "name": "java.ThreadCpuTimeEnabled",
+            "description": "java.lang:type=Threading / ThreadCpuTimeEnabled",
+            "mBeanName": "java.lang:type=Threading",
+            "mBeanAttributeName": "ThreadCpuTimeEnabled"
+        },
+        {
+            "name": "java.PeakThreadCount",
+            "description": "java.lang:type=Threading / PeakThreadCount",
+            "mBeanName": "java.lang:type=Threading",
+            "mBeanAttributeName": "PeakThreadCount"
+        },
+        {
+            "name": "java.DaemonThreadCount",
+            "description": "java.lang:type=Threading / DaemonThreadCount",
+            "mBeanName": "java.lang:type=Threading",
+            "mBeanAttributeName": "DaemonThreadCount"
+        },
+        {
+            "name": "java.ThreadCount",
+            "description": "java.lang:type=Threading / ThreadCount",
+            "mBeanName": "java.lang:type=Threading",
+            "mBeanAttributeName": "ThreadCount"
+        },
+        {
+            "name": "java.TotalStartedThreadCount",
+            "description": "java.lang:type=Threading / TotalStartedThreadCount",
+            "mBeanName": "java.lang:type=Threading",
+            "mBeanAttributeName": "TotalStartedThreadCount"
+        },
+        {
+            "name": "java.AllThreadIds",
+            "description": "java.lang:type=Threading / AllThreadIds",
+            "mBeanName": "java.lang:type=Threading",
+            "mBeanAttributeName": "AllThreadIds"
+        },
+        {
+            "name": "java.CurrentThreadCpuTime",
+            "description": "java.lang:type=Threading / CurrentThreadCpuTime",
+            "mBeanName": "java.lang:type=Threading",
+            "mBeanAttributeName": "CurrentThreadCpuTime"
+        },
+        {
+            "name": "java.CurrentThreadUserTime",
+            "description": "java.lang:type=Threading / CurrentThreadUserTime",
+            "mBeanName": "java.lang:type=Threading",
+            "mBeanAttributeName": "CurrentThreadUserTime"
+        },
+        {
+            "name": "java.ThreadCpuTimeSupported",
+            "description": "java.lang:type=Threading / ThreadCpuTimeSupported",
+            "mBeanName": "java.lang:type=Threading",
+            "mBeanAttributeName": "ThreadCpuTimeSupported"
+        },
+        {
+            "name": "java.ObjectName",
+            "description": "java.lang:type=Threading / ObjectName",
+            "mBeanName": "java.lang:type=Threading",
+            "mBeanAttributeName": "ObjectName"
+        },
+        {
+            "name": "java.OpenFileDescriptorCount",
+            "description": "java.lang:type=OperatingSystem / OpenFileDescriptorCount",
+            "mBeanName": "java.lang:type=OperatingSystem",
+            "mBeanAttributeName": "OpenFileDescriptorCount"
+        },
+        {
+            "name": "java.MaxFileDescriptorCount",
+            "description": "java.lang:type=OperatingSystem / MaxFileDescriptorCount",
+            "mBeanName": "java.lang:type=OperatingSystem",
+            "mBeanAttributeName": "MaxFileDescriptorCount"
+        },
+        {
+            "name": "java.CommittedVirtualMemorySize",
+            "description": "java.lang:type=OperatingSystem / CommittedVirtualMemorySize",
+            "mBeanName": "java.lang:type=OperatingSystem",
+            "mBeanAttributeName": "CommittedVirtualMemorySize"
+        },
+        {
+            "name": "java.TotalSwapSpaceSize",
+            "description": "java.lang:type=OperatingSystem / TotalSwapSpaceSize",
+            "mBeanName": "java.lang:type=OperatingSystem",
+            "mBeanAttributeName": "TotalSwapSpaceSize"
+        },
+        {
+            "name": "java.FreeSwapSpaceSize",
+            "description": "java.lang:type=OperatingSystem / FreeSwapSpaceSize",
+            "mBeanName": "java.lang:type=OperatingSystem",
+            "mBeanAttributeName": "FreeSwapSpaceSize"
+        },
+        {
+            "name": "java.ProcessCpuTime",
+            "description": "java.lang:type=OperatingSystem / ProcessCpuTime",
+            "mBeanName": "java.lang:type=OperatingSystem",
+            "mBeanAttributeName": "ProcessCpuTime"
+        },
+        {
+            "name": "java.FreePhysicalMemorySize",
+            "description": "java.lang:type=OperatingSystem / FreePhysicalMemorySize",
+            "mBeanName": "java.lang:type=OperatingSystem",
+            "mBeanAttributeName": "FreePhysicalMemorySize"
+        },
+        {
+            "name": "java.TotalPhysicalMemorySize",
+            "description": "java.lang:type=OperatingSystem / TotalPhysicalMemorySize",
+            "mBeanName": "java.lang:type=OperatingSystem",
+            "mBeanAttributeName": "TotalPhysicalMemorySize"
+        },
+        {
+            "name": "java.SystemCpuLoad",
+            "description": "java.lang:type=OperatingSystem / SystemCpuLoad",
+            "mBeanName": "java.lang:type=OperatingSystem",
+            "mBeanAttributeName": "SystemCpuLoad"
+        },
+        {
+            "name": "java.ProcessCpuLoad",
+            "description": "java.lang:type=OperatingSystem / ProcessCpuLoad",
+            "mBeanName": "java.lang:type=OperatingSystem",
+            "mBeanAttributeName": "ProcessCpuLoad"
+        },
+        {
+            "name": "java.AvailableProcessors",
+            "description": "java.lang:type=OperatingSystem / AvailableProcessors",
+            "mBeanName": "java.lang:type=OperatingSystem",
+            "mBeanAttributeName": "AvailableProcessors"
+        },
+        {
+            "name": "java.Arch",
+            "description": "java.lang:type=OperatingSystem / Arch",
+            "mBeanName": "java.lang:type=OperatingSystem",
+            "mBeanAttributeName": "Arch"
+        },
+        {
+            "name": "java.Version",
+            "description": "java.lang:type=OperatingSystem / Version",
+            "mBeanName": "java.lang:type=OperatingSystem",
+            "mBeanAttributeName": "Version"
+        },
+        {
+            "name": "java.SystemLoadAverage",
+            "description": "java.lang:type=OperatingSystem / SystemLoadAverage",
+            "mBeanName": "java.lang:type=OperatingSystem",
+            "mBeanAttributeName": "SystemLoadAverage"
+        },
+        {
+            "name": "java.Name",
+            "description": "java.lang:type=OperatingSystem / Name",
+            "mBeanName": "java.lang:type=OperatingSystem",
+            "mBeanAttributeName": "Name"
+        },
+        {
+            "name": "java.ObjectName",
+            "description": "java.lang:type=OperatingSystem / ObjectName",
+            "mBeanName": "java.lang:type=OperatingSystem",
+            "mBeanAttributeName": "ObjectName"
+        },
+        {
+            "name": "java.Valid",
+            "description": "java.lang:type=MemoryPool,name=Code Cache / Valid",
+            "mBeanName": "java.lang:type=MemoryPool,name=Code Cache",
+            "mBeanAttributeName": "Valid"
+        },
+        {
+            "name": "java.Usage[init]",
+            "description": "java.lang:type=MemoryPool,name=Code Cache / Usage",
+            "mBeanName": "java.lang:type=MemoryPool,name=Code Cache",
+            "mBeanAttributeName": "Usage",
+            "mBeanCompositeDataItem": "init",
+        },
+        {
+            "name": "java.Usage[committed]",
+            "description": "java.lang:type=MemoryPool,name=Code Cache / Usage",
+            "mBeanName": "java.lang:type=MemoryPool,name=Code Cache",
+            "mBeanAttributeName": "Usage",
+            "mBeanCompositeDataItem": "committed",
+        },
+        {
+            "name": "java.Usage[max]",
+            "description": "java.lang:type=MemoryPool,name=Code Cache / Usage",
+            "mBeanName": "java.lang:type=MemoryPool,name=Code Cache",
+            "mBeanAttributeName": "Usage",
+            "mBeanCompositeDataItem": "max",
+        },
+        {
+            "name": "java.Usage[used]",
+            "description": "java.lang:type=MemoryPool,name=Code Cache / Usage",
+            "mBeanName": "java.lang:type=MemoryPool,name=Code Cache",
+            "mBeanAttributeName": "Usage",
+            "mBeanCompositeDataItem": "used",
+        },
+        {
+            "name": "java.PeakUsage[init]",
+            "description": "java.lang:type=MemoryPool,name=Code Cache / PeakUsage",
+            "mBeanName": "java.lang:type=MemoryPool,name=Code Cache",
+            "mBeanAttributeName": "PeakUsage",
+            "mBeanCompositeDataItem": "init",
+        },
+        {
+            "name": "java.PeakUsage[committed]",
+            "description": "java.lang:type=MemoryPool,name=Code Cache / PeakUsage",
+            "mBeanName": "java.lang:type=MemoryPool,name=Code Cache",
+            "mBeanAttributeName": "PeakUsage",
+            "mBeanCompositeDataItem": "committed",
+        },
+        {
+            "name": "java.PeakUsage[max]",
+            "description": "java.lang:type=MemoryPool,name=Code Cache / PeakUsage",
+            "mBeanName": "java.lang:type=MemoryPool,name=Code Cache",
+            "mBeanAttributeName": "PeakUsage",
+            "mBeanCompositeDataItem": "max",
+        },
+        {
+            "name": "java.PeakUsage[used]",
+            "description": "java.lang:type=MemoryPool,name=Code Cache / PeakUsage",
+            "mBeanName": "java.lang:type=MemoryPool,name=Code Cache",
+            "mBeanAttributeName": "PeakUsage",
+            "mBeanCompositeDataItem": "used",
+        },
+        {
+            "name": "java.MemoryManagerNames",
+            "description": "java.lang:type=MemoryPool,name=Code Cache / MemoryManagerNames",
+            "mBeanName": "java.lang:type=MemoryPool,name=Code Cache",
+            "mBeanAttributeName": "MemoryManagerNames"
+        },
+        {
+            "name": "java.UsageThreshold",
+            "description": "java.lang:type=MemoryPool,name=Code Cache / UsageThreshold",
+            "mBeanName": "java.lang:type=MemoryPool,name=Code Cache",
+            "mBeanAttributeName": "UsageThreshold"
+        },
+        {
+            "name": "java.UsageThresholdExceeded",
+            "description": "java.lang:type=MemoryPool,name=Code Cache / UsageThresholdExceeded",
+            "mBeanName": "java.lang:type=MemoryPool,name=Code Cache",
+            "mBeanAttributeName": "UsageThresholdExceeded"
+        },
+        {
+            "name": "java.UsageThresholdCount",
+            "description": "java.lang:type=MemoryPool,name=Code Cache / UsageThresholdCount",
+            "mBeanName": "java.lang:type=MemoryPool,name=Code Cache",
+            "mBeanAttributeName": "UsageThresholdCount"
+        },
+        {
+            "name": "java.UsageThresholdSupported",
+            "description": "java.lang:type=MemoryPool,name=Code Cache / UsageThresholdSupported",
+            "mBeanName": "java.lang:type=MemoryPool,name=Code Cache",
+            "mBeanAttributeName": "UsageThresholdSupported"
+        },
+        {
+            "name": "java.CollectionUsageThresholdSupported",
+            "description": "java.lang:type=MemoryPool,name=Code Cache / CollectionUsageThresholdSupported",
+            "mBeanName": "java.lang:type=MemoryPool,name=Code Cache",
+            "mBeanAttributeName": "CollectionUsageThresholdSupported"
+        },
+        {
+            "name": "java.Name",
+            "description": "java.lang:type=MemoryPool,name=Code Cache / Name",
+            "mBeanName": "java.lang:type=MemoryPool,name=Code Cache",
+            "mBeanAttributeName": "Name"
+        },
+        {
+            "name": "java.Type",
+            "description": "java.lang:type=MemoryPool,name=Code Cache / Type",
+            "mBeanName": "java.lang:type=MemoryPool,name=Code Cache",
+            "mBeanAttributeName": "Type"
+        },
+        {
+            "name": "java.ObjectName",
+            "description": "java.lang:type=MemoryPool,name=Code Cache / ObjectName",
+            "mBeanName": "java.lang:type=MemoryPool,name=Code Cache",
+            "mBeanAttributeName": "ObjectName"
+        },
+        {
+            "name": "java.Count",
+            "description": "java.nio:type=BufferPool,name=direct / Count",
+            "mBeanName": "java.nio:type=BufferPool,name=direct",
+            "mBeanAttributeName": "Count"
+        },
+        {
+            "name": "java.TotalCapacity",
+            "description": "java.nio:type=BufferPool,name=direct / TotalCapacity",
+            "mBeanName": "java.nio:type=BufferPool,name=direct",
+            "mBeanAttributeName": "TotalCapacity"
+        },
+        {
+            "name": "java.MemoryUsed",
+            "description": "java.nio:type=BufferPool,name=direct / MemoryUsed",
+            "mBeanName": "java.nio:type=BufferPool,name=direct",
+            "mBeanAttributeName": "MemoryUsed"
+        },
+        {
+            "name": "java.Name",
+            "description": "java.nio:type=BufferPool,name=direct / Name",
+            "mBeanName": "java.nio:type=BufferPool,name=direct",
+            "mBeanAttributeName": "Name"
+        },
+        {
+            "name": "java.ObjectName",
+            "description": "java.nio:type=BufferPool,name=direct / ObjectName",
+            "mBeanName": "java.nio:type=BufferPool,name=direct",
+            "mBeanAttributeName": "ObjectName"
+        },
+        {
+            "name": "java.CompilationTimeMonitoringSupported",
+            "description": "java.lang:type=Compilation / CompilationTimeMonitoringSupported",
+            "mBeanName": "java.lang:type=Compilation",
+            "mBeanAttributeName": "CompilationTimeMonitoringSupported"
+        },
+        {
+            "name": "java.TotalCompilationTime",
+            "description": "java.lang:type=Compilation / TotalCompilationTime",
+            "mBeanName": "java.lang:type=Compilation",
+            "mBeanAttributeName": "TotalCompilationTime"
+        },
+        {
+            "name": "java.Name",
+            "description": "java.lang:type=Compilation / Name",
+            "mBeanName": "java.lang:type=Compilation",
+            "mBeanAttributeName": "Name"
+        },
+        {
+            "name": "java.ObjectName",
+            "description": "java.lang:type=Compilation / ObjectName",
+            "mBeanName": "java.lang:type=Compilation",
+            "mBeanAttributeName": "ObjectName"
+        },
+        {
+            "name": "java.Valid",
+            "description": "java.lang:type=MemoryManager,name=CodeCacheManager / Valid",
+            "mBeanName": "java.lang:type=MemoryManager,name=CodeCacheManager",
+            "mBeanAttributeName": "Valid"
+        },
+        {
+            "name": "java.MemoryPoolNames",
+            "description": "java.lang:type=MemoryManager,name=CodeCacheManager / MemoryPoolNames",
+            "mBeanName": "java.lang:type=MemoryManager,name=CodeCacheManager",
+            "mBeanAttributeName": "MemoryPoolNames"
+        },
+        {
+            "name": "java.Name",
+            "description": "java.lang:type=MemoryManager,name=CodeCacheManager / Name",
+            "mBeanName": "java.lang:type=MemoryManager,name=CodeCacheManager",
+            "mBeanAttributeName": "Name"
+        },
+        {
+            "name": "java.ObjectName",
+            "description": "java.lang:type=MemoryManager,name=CodeCacheManager / ObjectName",
+            "mBeanName": "java.lang:type=MemoryManager,name=CodeCacheManager",
+            "mBeanAttributeName": "ObjectName"
+        },
+        {
+            "name": "java.Valid",
+            "description": "java.lang:type=MemoryPool,name=Compressed Class Space / Valid",
+            "mBeanName": "java.lang:type=MemoryPool,name=Compressed Class Space",
+            "mBeanAttributeName": "Valid"
+        },
+        {
+            "name": "java.Usage[init]",
+            "description": "java.lang:type=MemoryPool,name=Compressed Class Space / Usage",
+            "mBeanName": "java.lang:type=MemoryPool,name=Compressed Class Space",
+            "mBeanAttributeName": "Usage",
+            "mBeanCompositeDataItem": "init",
+        },
+        {
+            "name": "java.Usage[committed]",
+            "description": "java.lang:type=MemoryPool,name=Compressed Class Space / Usage",
+            "mBeanName": "java.lang:type=MemoryPool,name=Compressed Class Space",
+            "mBeanAttributeName": "Usage",
+            "mBeanCompositeDataItem": "committed",
+        },
+        {
+            "name": "java.Usage[max]",
+            "description": "java.lang:type=MemoryPool,name=Compressed Class Space / Usage",
+            "mBeanName": "java.lang:type=MemoryPool,name=Compressed Class Space",
+            "mBeanAttributeName": "Usage",
+            "mBeanCompositeDataItem": "max",
+        },
+        {
+            "name": "java.Usage[used]",
+            "description": "java.lang:type=MemoryPool,name=Compressed Class Space / Usage",
+            "mBeanName": "java.lang:type=MemoryPool,name=Compressed Class Space",
+            "mBeanAttributeName": "Usage",
+            "mBeanCompositeDataItem": "used",
+        },
+        {
+            "name": "java.PeakUsage[init]",
+            "description": "java.lang:type=MemoryPool,name=Compressed Class Space / PeakUsage",
+            "mBeanName": "java.lang:type=MemoryPool,name=Compressed Class Space",
+            "mBeanAttributeName": "PeakUsage",
+            "mBeanCompositeDataItem": "init",
+        },
+        {
+            "name": "java.PeakUsage[committed]",
+            "description": "java.lang:type=MemoryPool,name=Compressed Class Space / PeakUsage",
+            "mBeanName": "java.lang:type=MemoryPool,name=Compressed Class Space",
+            "mBeanAttributeName": "PeakUsage",
+            "mBeanCompositeDataItem": "committed",
+        },
+        {
+            "name": "java.PeakUsage[max]",
+            "description": "java.lang:type=MemoryPool,name=Compressed Class Space / PeakUsage",
+            "mBeanName": "java.lang:type=MemoryPool,name=Compressed Class Space",
+            "mBeanAttributeName": "PeakUsage",
+            "mBeanCompositeDataItem": "max",
+        },
+        {
+            "name": "java.PeakUsage[used]",
+            "description": "java.lang:type=MemoryPool,name=Compressed Class Space / PeakUsage",
+            "mBeanName": "java.lang:type=MemoryPool,name=Compressed Class Space",
+            "mBeanAttributeName": "PeakUsage",
+            "mBeanCompositeDataItem": "used",
+        },
+        {
+            "name": "java.MemoryManagerNames",
+            "description": "java.lang:type=MemoryPool,name=Compressed Class Space / MemoryManagerNames",
+            "mBeanName": "java.lang:type=MemoryPool,name=Compressed Class Space",
+            "mBeanAttributeName": "MemoryManagerNames"
+        },
+        {
+            "name": "java.UsageThreshold",
+            "description": "java.lang:type=MemoryPool,name=Compressed Class Space / UsageThreshold",
+            "mBeanName": "java.lang:type=MemoryPool,name=Compressed Class Space",
+            "mBeanAttributeName": "UsageThreshold"
+        },
+        {
+            "name": "java.UsageThresholdExceeded",
+            "description": "java.lang:type=MemoryPool,name=Compressed Class Space / UsageThresholdExceeded",
+            "mBeanName": "java.lang:type=MemoryPool,name=Compressed Class Space",
+            "mBeanAttributeName": "UsageThresholdExceeded"
+        },
+        {
+            "name": "java.UsageThresholdCount",
+            "description": "java.lang:type=MemoryPool,name=Compressed Class Space / UsageThresholdCount",
+            "mBeanName": "java.lang:type=MemoryPool,name=Compressed Class Space",
+            "mBeanAttributeName": "UsageThresholdCount"
+        },
+        {
+            "name": "java.UsageThresholdSupported",
+            "description": "java.lang:type=MemoryPool,name=Compressed Class Space / UsageThresholdSupported",
+            "mBeanName": "java.lang:type=MemoryPool,name=Compressed Class Space",
+            "mBeanAttributeName": "UsageThresholdSupported"
+        },
+        {
+            "name": "java.CollectionUsageThresholdSupported",
+            "description": "java.lang:type=MemoryPool,name=Compressed Class Space / CollectionUsageThresholdSupported",
+            "mBeanName": "java.lang:type=MemoryPool,name=Compressed Class Space",
+            "mBeanAttributeName": "CollectionUsageThresholdSupported"
+        },
+        {
+            "name": "java.Name",
+            "description": "java.lang:type=MemoryPool,name=Compressed Class Space / Name",
+            "mBeanName": "java.lang:type=MemoryPool,name=Compressed Class Space",
+            "mBeanAttributeName": "Name"
+        },
+        {
+            "name": "java.Type",
+            "description": "java.lang:type=MemoryPool,name=Compressed Class Space / Type",
+            "mBeanName": "java.lang:type=MemoryPool,name=Compressed Class Space",
+            "mBeanAttributeName": "Type"
+        },
+        {
+            "name": "java.ObjectName",
+            "description": "java.lang:type=MemoryPool,name=Compressed Class Space / ObjectName",
+            "mBeanName": "java.lang:type=MemoryPool,name=Compressed Class Space",
+            "mBeanAttributeName": "ObjectName"
+        },
+        {
+            "name": "java.Verbose",
+            "description": "java.lang:type=Memory / Verbose",
+            "mBeanName": "java.lang:type=Memory",
+            "mBeanAttributeName": "Verbose"
+        },
+        {
+            "name": "java.ObjectPendingFinalizationCount",
+            "description": "java.lang:type=Memory / ObjectPendingFinalizationCount",
+            "mBeanName": "java.lang:type=Memory",
+            "mBeanAttributeName": "ObjectPendingFinalizationCount"
+        },
+        {
+            "name": "java.HeapMemoryUsage[init]",
+            "description": "java.lang:type=Memory / HeapMemoryUsage",
+            "mBeanName": "java.lang:type=Memory",
+            "mBeanAttributeName": "HeapMemoryUsage",
+            "mBeanCompositeDataItem": "init",
+        },
+        {
+            "name": "java.HeapMemoryUsage[committed]",
+            "description": "java.lang:type=Memory / HeapMemoryUsage",
+            "mBeanName": "java.lang:type=Memory",
+            "mBeanAttributeName": "HeapMemoryUsage",
+            "mBeanCompositeDataItem": "committed",
+        },
+        {
+            "name": "java.HeapMemoryUsage[max]",
+            "description": "java.lang:type=Memory / HeapMemoryUsage",
+            "mBeanName": "java.lang:type=Memory",
+            "mBeanAttributeName": "HeapMemoryUsage",
+            "mBeanCompositeDataItem": "max",
+        },
+        {
+            "name": "java.HeapMemoryUsage[used]",
+            "description": "java.lang:type=Memory / HeapMemoryUsage",
+            "mBeanName": "java.lang:type=Memory",
+            "mBeanAttributeName": "HeapMemoryUsage",
+            "mBeanCompositeDataItem": "used",
+        },
+        {
+            "name": "java.NonHeapMemoryUsage[init]",
+            "description": "java.lang:type=Memory / NonHeapMemoryUsage",
+            "mBeanName": "java.lang:type=Memory",
+            "mBeanAttributeName": "NonHeapMemoryUsage",
+            "mBeanCompositeDataItem": "init",
+        },
+        {
+            "name": "java.NonHeapMemoryUsage[committed]",
+            "description": "java.lang:type=Memory / NonHeapMemoryUsage",
+            "mBeanName": "java.lang:type=Memory",
+            "mBeanAttributeName": "NonHeapMemoryUsage",
+            "mBeanCompositeDataItem": "committed",
+        },
+        {
+            "name": "java.NonHeapMemoryUsage[max]",
+            "description": "java.lang:type=Memory / NonHeapMemoryUsage",
+            "mBeanName": "java.lang:type=Memory",
+            "mBeanAttributeName": "NonHeapMemoryUsage",
+            "mBeanCompositeDataItem": "max",
+        },
+        {
+            "name": "java.NonHeapMemoryUsage[used]",
+            "description": "java.lang:type=Memory / NonHeapMemoryUsage",
+            "mBeanName": "java.lang:type=Memory",
+            "mBeanAttributeName": "NonHeapMemoryUsage",
+            "mBeanCompositeDataItem": "used",
+        },
+        {
+            "name": "java.ObjectName",
+            "description": "java.lang:type=Memory / ObjectName",
+            "mBeanName": "java.lang:type=Memory",
+            "mBeanAttributeName": "ObjectName"
+        },
+        {
+            "name": "java.Count",
+            "description": "java.nio:type=BufferPool,name=mapped / Count",
+            "mBeanName": "java.nio:type=BufferPool,name=mapped",
+            "mBeanAttributeName": "Count"
+        },
+        {
+            "name": "java.TotalCapacity",
+            "description": "java.nio:type=BufferPool,name=mapped / TotalCapacity",
+            "mBeanName": "java.nio:type=BufferPool,name=mapped",
+            "mBeanAttributeName": "TotalCapacity"
+        },
+        {
+            "name": "java.MemoryUsed",
+            "description": "java.nio:type=BufferPool,name=mapped / MemoryUsed",
+            "mBeanName": "java.nio:type=BufferPool,name=mapped",
+            "mBeanAttributeName": "MemoryUsed"
+        },
+        {
+            "name": "java.Name",
+            "description": "java.nio:type=BufferPool,name=mapped / Name",
+            "mBeanName": "java.nio:type=BufferPool,name=mapped",
+            "mBeanAttributeName": "Name"
+        },
+        {
+            "name": "java.ObjectName",
+            "description": "java.nio:type=BufferPool,name=mapped / ObjectName",
+            "mBeanName": "java.nio:type=BufferPool,name=mapped",
+            "mBeanAttributeName": "ObjectName"
+        },
+        {
+            "name": "java.ObjectName",
+            "description": "java.util.logging:type=Logging / ObjectName",
+            "mBeanName": "java.util.logging:type=Logging",
+            "mBeanAttributeName": "ObjectName"
+        },
+        {
+            "name": "java.LoggerNames",
+            "description": "java.util.logging:type=Logging / LoggerNames",
+            "mBeanName": "java.util.logging:type=Logging",
+            "mBeanAttributeName": "LoggerNames"
+        },
+        {
+            "name": "java.Valid",
+            "description": "java.lang:type=MemoryPool,name=PS Survivor Space / Valid",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Survivor Space",
+            "mBeanAttributeName": "Valid"
+        },
+        {
+            "name": "java.Usage[init]",
+            "description": "java.lang:type=MemoryPool,name=PS Survivor Space / Usage",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Survivor Space",
+            "mBeanAttributeName": "Usage",
+            "mBeanCompositeDataItem": "init",
+        },
+        {
+            "name": "java.Usage[committed]",
+            "description": "java.lang:type=MemoryPool,name=PS Survivor Space / Usage",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Survivor Space",
+            "mBeanAttributeName": "Usage",
+            "mBeanCompositeDataItem": "committed",
+        },
+        {
+            "name": "java.Usage[max]",
+            "description": "java.lang:type=MemoryPool,name=PS Survivor Space / Usage",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Survivor Space",
+            "mBeanAttributeName": "Usage",
+            "mBeanCompositeDataItem": "max",
+        },
+        {
+            "name": "java.Usage[used]",
+            "description": "java.lang:type=MemoryPool,name=PS Survivor Space / Usage",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Survivor Space",
+            "mBeanAttributeName": "Usage",
+            "mBeanCompositeDataItem": "used",
+        },
+        {
+            "name": "java.PeakUsage[init]",
+            "description": "java.lang:type=MemoryPool,name=PS Survivor Space / PeakUsage",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Survivor Space",
+            "mBeanAttributeName": "PeakUsage",
+            "mBeanCompositeDataItem": "init",
+        },
+        {
+            "name": "java.PeakUsage[committed]",
+            "description": "java.lang:type=MemoryPool,name=PS Survivor Space / PeakUsage",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Survivor Space",
+            "mBeanAttributeName": "PeakUsage",
+            "mBeanCompositeDataItem": "committed",
+        },
+        {
+            "name": "java.PeakUsage[max]",
+            "description": "java.lang:type=MemoryPool,name=PS Survivor Space / PeakUsage",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Survivor Space",
+            "mBeanAttributeName": "PeakUsage",
+            "mBeanCompositeDataItem": "max",
+        },
+        {
+            "name": "java.PeakUsage[used]",
+            "description": "java.lang:type=MemoryPool,name=PS Survivor Space / PeakUsage",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Survivor Space",
+            "mBeanAttributeName": "PeakUsage",
+            "mBeanCompositeDataItem": "used",
+        },
+        {
+            "name": "java.MemoryManagerNames",
+            "description": "java.lang:type=MemoryPool,name=PS Survivor Space / MemoryManagerNames",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Survivor Space",
+            "mBeanAttributeName": "MemoryManagerNames"
+        },
+        {
+            "name": "java.UsageThresholdSupported",
+            "description": "java.lang:type=MemoryPool,name=PS Survivor Space / UsageThresholdSupported",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Survivor Space",
+            "mBeanAttributeName": "UsageThresholdSupported"
+        },
+        {
+            "name": "java.CollectionUsageThreshold",
+            "description": "java.lang:type=MemoryPool,name=PS Survivor Space / CollectionUsageThreshold",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Survivor Space",
+            "mBeanAttributeName": "CollectionUsageThreshold"
+        },
+        {
+            "name": "java.CollectionUsageThresholdExceeded",
+            "description": "java.lang:type=MemoryPool,name=PS Survivor Space / CollectionUsageThresholdExceeded",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Survivor Space",
+            "mBeanAttributeName": "CollectionUsageThresholdExceeded"
+        },
+        {
+            "name": "java.CollectionUsageThresholdCount",
+            "description": "java.lang:type=MemoryPool,name=PS Survivor Space / CollectionUsageThresholdCount",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Survivor Space",
+            "mBeanAttributeName": "CollectionUsageThresholdCount"
+        },
+        {
+            "name": "java.CollectionUsage[init]",
+            "description": "java.lang:type=MemoryPool,name=PS Survivor Space / CollectionUsage",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Survivor Space",
+            "mBeanAttributeName": "CollectionUsage",
+            "mBeanCompositeDataItem": "init",
+        },
+        {
+            "name": "java.CollectionUsage[committed]",
+            "description": "java.lang:type=MemoryPool,name=PS Survivor Space / CollectionUsage",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Survivor Space",
+            "mBeanAttributeName": "CollectionUsage",
+            "mBeanCompositeDataItem": "committed",
+        },
+        {
+            "name": "java.CollectionUsage[max]",
+            "description": "java.lang:type=MemoryPool,name=PS Survivor Space / CollectionUsage",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Survivor Space",
+            "mBeanAttributeName": "CollectionUsage",
+            "mBeanCompositeDataItem": "max",
+        },
+        {
+            "name": "java.CollectionUsage[used]",
+            "description": "java.lang:type=MemoryPool,name=PS Survivor Space / CollectionUsage",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Survivor Space",
+            "mBeanAttributeName": "CollectionUsage",
+            "mBeanCompositeDataItem": "used",
+        },
+        {
+            "name": "java.CollectionUsageThresholdSupported",
+            "description": "java.lang:type=MemoryPool,name=PS Survivor Space / CollectionUsageThresholdSupported",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Survivor Space",
+            "mBeanAttributeName": "CollectionUsageThresholdSupported"
+        },
+        {
+            "name": "java.Name",
+            "description": "java.lang:type=MemoryPool,name=PS Survivor Space / Name",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Survivor Space",
+            "mBeanAttributeName": "Name"
+        },
+        {
+            "name": "java.Type",
+            "description": "java.lang:type=MemoryPool,name=PS Survivor Space / Type",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Survivor Space",
+            "mBeanAttributeName": "Type"
+        },
+        {
+            "name": "java.ObjectName",
+            "description": "java.lang:type=MemoryPool,name=PS Survivor Space / ObjectName",
+            "mBeanName": "java.lang:type=MemoryPool,name=PS Survivor Space",
+            "mBeanAttributeName": "ObjectName"
+        },
+        {
+            "name": "java.TotalLoadedClassCount",
+            "description": "java.lang:type=ClassLoading / TotalLoadedClassCount",
+            "mBeanName": "java.lang:type=ClassLoading",
+            "mBeanAttributeName": "TotalLoadedClassCount"
+        },
+        {
+            "name": "java.LoadedClassCount",
+            "description": "java.lang:type=ClassLoading / LoadedClassCount",
+            "mBeanName": "java.lang:type=ClassLoading",
+            "mBeanAttributeName": "LoadedClassCount"
+        },
+        {
+            "name": "java.UnloadedClassCount",
+            "description": "java.lang:type=ClassLoading / UnloadedClassCount",
+            "mBeanName": "java.lang:type=ClassLoading",
+            "mBeanAttributeName": "UnloadedClassCount"
+        },
+        {
+            "name": "java.Verbose",
+            "description": "java.lang:type=ClassLoading / Verbose",
+            "mBeanName": "java.lang:type=ClassLoading",
+            "mBeanAttributeName": "Verbose"
+        },
+        {
+            "name": "java.ObjectName",
+            "description": "java.lang:type=ClassLoading / ObjectName",
+            "mBeanName": "java.lang:type=ClassLoading",
+            "mBeanAttributeName": "ObjectName"
+        },
+        {
+            "name": "java.Valid",
+            "description": "java.lang:type=MemoryManager,name=Metaspace Manager / Valid",
+            "mBeanName": "java.lang:type=MemoryManager,name=Metaspace Manager",
+            "mBeanAttributeName": "Valid"
+        },
+        {
+            "name": "java.MemoryPoolNames",
+            "description": "java.lang:type=MemoryManager,name=Metaspace Manager / MemoryPoolNames",
+            "mBeanName": "java.lang:type=MemoryManager,name=Metaspace Manager",
+            "mBeanAttributeName": "MemoryPoolNames"
+        },
+        {
+            "name": "java.Name",
+            "description": "java.lang:type=MemoryManager,name=Metaspace Manager / Name",
+            "mBeanName": "java.lang:type=MemoryManager,name=Metaspace Manager",
+            "mBeanAttributeName": "Name"
+        },
+        {
+            "name": "java.ObjectName",
+            "description": "java.lang:type=MemoryManager,name=Metaspace Manager / ObjectName",
+            "mBeanName": "java.lang:type=MemoryManager,name=Metaspace Manager",
+            "mBeanAttributeName": "ObjectName"
+        },
+        {
+            "name": "java.LastGcInfo[duration]",
+            "description": "java.lang:type=GarbageCollector,name=PS MarkSweep / LastGcInfo",
+            "mBeanName": "java.lang:type=GarbageCollector,name=PS MarkSweep",
+            "mBeanAttributeName": "LastGcInfo",
+            "mBeanCompositeDataItem": "duration",
+        },
+        {
+            "name": "java.LastGcInfo[memoryUsageBeforeGc]",
+            "description": "java.lang:type=GarbageCollector,name=PS MarkSweep / LastGcInfo",
+            "mBeanName": "java.lang:type=GarbageCollector,name=PS MarkSweep",
+            "mBeanAttributeName": "LastGcInfo",
+            "mBeanCompositeDataItem": "memoryUsageBeforeGc",
+        },
+        {
+            "name": "java.LastGcInfo[GcThreadCount]",
+            "description": "java.lang:type=GarbageCollector,name=PS MarkSweep / LastGcInfo",
+            "mBeanName": "java.lang:type=GarbageCollector,name=PS MarkSweep",
+            "mBeanAttributeName": "LastGcInfo",
+            "mBeanCompositeDataItem": "GcThreadCount",
+        },
+        {
+            "name": "java.LastGcInfo[startTime]",
+            "description": "java.lang:type=GarbageCollector,name=PS MarkSweep / LastGcInfo",
+            "mBeanName": "java.lang:type=GarbageCollector,name=PS MarkSweep",
+            "mBeanAttributeName": "LastGcInfo",
+            "mBeanCompositeDataItem": "startTime",
+        },
+        {
+            "name": "java.LastGcInfo[endTime]",
+            "description": "java.lang:type=GarbageCollector,name=PS MarkSweep / LastGcInfo",
+            "mBeanName": "java.lang:type=GarbageCollector,name=PS MarkSweep",
+            "mBeanAttributeName": "LastGcInfo",
+            "mBeanCompositeDataItem": "endTime",
+        },
+        {
+            "name": "java.LastGcInfo[id]",
+            "description": "java.lang:type=GarbageCollector,name=PS MarkSweep / LastGcInfo",
+            "mBeanName": "java.lang:type=GarbageCollector,name=PS MarkSweep",
+            "mBeanAttributeName": "LastGcInfo",
+            "mBeanCompositeDataItem": "id",
+        },
+        {
+            "name": "java.LastGcInfo[memoryUsageAfterGc]",
+            "description": "java.lang:type=GarbageCollector,name=PS MarkSweep / LastGcInfo",
+            "mBeanName": "java.lang:type=GarbageCollector,name=PS MarkSweep",
+            "mBeanAttributeName": "LastGcInfo",
+            "mBeanCompositeDataItem": "memoryUsageAfterGc",
+        },
+        {
+            "name": "java.CollectionCount",
+            "description": "java.lang:type=GarbageCollector,name=PS MarkSweep / CollectionCount",
+            "mBeanName": "java.lang:type=GarbageCollector,name=PS MarkSweep",
+            "mBeanAttributeName": "CollectionCount"
+        },
+        {
+            "name": "java.CollectionTime",
+            "description": "java.lang:type=GarbageCollector,name=PS MarkSweep / CollectionTime",
+            "mBeanName": "java.lang:type=GarbageCollector,name=PS MarkSweep",
+            "mBeanAttributeName": "CollectionTime"
+        },
+        {
+            "name": "java.Valid",
+            "description": "java.lang:type=GarbageCollector,name=PS MarkSweep / Valid",
+            "mBeanName": "java.lang:type=GarbageCollector,name=PS MarkSweep",
+            "mBeanAttributeName": "Valid"
+        },
+        {
+            "name": "java.MemoryPoolNames",
+            "description": "java.lang:type=GarbageCollector,name=PS MarkSweep / MemoryPoolNames",
+            "mBeanName": "java.lang:type=GarbageCollector,name=PS MarkSweep",
+            "mBeanAttributeName": "MemoryPoolNames"
+        },
+        {
+            "name": "java.Name",
+            "description": "java.lang:type=GarbageCollector,name=PS MarkSweep / Name",
+            "mBeanName": "java.lang:type=GarbageCollector,name=PS MarkSweep",
+            "mBeanAttributeName": "Name"
+        },
+        {
+            "name": "java.ObjectName",
+            "description": "java.lang:type=GarbageCollector,name=PS MarkSweep / ObjectName",
+            "mBeanName": "java.lang:type=GarbageCollector,name=PS MarkSweep",
+            "mBeanAttributeName": "ObjectName"
+        },
+        {
+            "name": "com.DiagnosticOptions",
+            "description": "com.sun.management:type=HotSpotDiagnostic / DiagnosticOptions",
+            "mBeanName": "com.sun.management:type=HotSpotDiagnostic",
+            "mBeanAttributeName": "DiagnosticOptions"
+        },
+        {
+            "name": "com.ObjectName",
+            "description": "com.sun.management:type=HotSpotDiagnostic / ObjectName",
+            "mBeanName": "com.sun.management:type=HotSpotDiagnostic",
+            "mBeanAttributeName": "ObjectName"
+        }
+    ]
+}
