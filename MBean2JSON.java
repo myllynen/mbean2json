@@ -1,7 +1,7 @@
 /*
  * MBean2JSON
  *
- * Copyright (C) 2016-2017 Marko Myllynen <myllynen@redhat.com>
+ * Copyright (C) 2016-2018 Marko Myllynen <myllynen@redhat.com>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -53,6 +53,7 @@ import javax.management.ReflectionException;
 import javax.management.RuntimeMBeanException;
 import javax.management.openmbean.CompositeData;
 import javax.management.openmbean.CompositeType;
+import javax.management.openmbean.SimpleType;
 import javax.management.openmbean.TabularData;
 import javax.management.remote.JMXConnector;
 import javax.management.remote.JMXConnectorFactory;
@@ -67,16 +68,19 @@ public class MBean2JSON {
     private static final String DEFAULT_CONFIG       = "mbean2json.properties";
     private static final String DEFAULT_JVM_TARGETS  = "localhost:9875";
     private static final String DEFAULT_MBEAN_FILTER = "java.lang:*!java.nio:*";
+    private static final boolean DEFAULT_COMPAT_ONLY = false;
 
     // Command line options
     private static final String OPT_CONFIG       = "--config";
     private static final String OPT_JVM_TARGETS  = "--jvm-targets";
     private static final String OPT_MBEAN_FILTER = "--mbean-filter";
+    private static final String OPT_COMPAT_ONLY  = "--compat-only";
 
     // Options
     private static String configFile  = DEFAULT_CONFIG;
     private static String jvmTargets  = DEFAULT_JVM_TARGETS;
     private static String mbeanFilter = DEFAULT_MBEAN_FILTER;
+    private static boolean compatOnly = DEFAULT_COMPAT_ONLY;
 
     // Authentication using environment variable (optional)
     private static final String JMX_CONNECTOR_CREDENTIALS = "JMX_CONNECTOR_CREDENTIALS";
@@ -114,6 +118,8 @@ public class MBean2JSON {
                     jvmTargets = iter.next();
                 } else if (arg.equals(OPT_MBEAN_FILTER)) {
                     mbeanFilter = iter.next();
+                } else if (arg.equals(OPT_COMPAT_ONLY)) {
+                    compatOnly = true;
                 } else {
                     throw new IllegalArgumentException("Unrecognized option '" + arg + "'");
                 }
@@ -184,7 +190,17 @@ public class MBean2JSON {
 
     // Helper to construct a sanitized metric name
     private static String constructSaneName(final String mbeanName, final String attrName) {
-        return mbeanName.split("\\.")[0] + "." + attrName;
+        String base = mbeanName.replaceAll(":type=", ".").replaceAll(" ", "_");
+        base = base.replaceAll(",name=Compressed_Class_Space", ".ccs.");
+        base = base.replaceAll(",name=Code_Cache", ".cc.");
+        base = base.replaceAll(".MBeanServerDelegate", "");
+        base = base.replaceAll(",name=", ".");
+        if (!base.endsWith(".")) {
+            base = base + ".";
+        }
+        base = base.replaceAll(".lang", "").replaceAll(".nio", "");
+        String name = attrName.replaceAll(" ", "_").replaceAll("CollectionUsage", "CU_");
+        return base.toLowerCase() + name.toLowerCase();
     }
 
     // Helper to construct a metric description
@@ -209,6 +225,7 @@ public class MBean2JSON {
         System.out.print("        {\n");
         System.out.print("            \"name\": \"" + name + "\",\n");
         System.out.print("            \"description\": \"" + desc + "\",\n");
+        //System.out.print("            \"optional\": true,\n");
         //System.out.print("            \"semantics\": \"" + semantics + "\",\n");
         //System.out.print("            \"units\": \"" + units + "\",\n");
         System.out.print("            \"mBeanName\": \"" + mbean.toString() + "\",\n");
@@ -216,30 +233,25 @@ public class MBean2JSON {
         if (item == null) {
             System.out.print("\n");
         } else {
-            System.out.print(",\n            \"mBeanCompositeDataItem\": \"" + item + "\",\n");
+            System.out.print(",\n            \"mBeanCompositeDataItem\": \"" + item + "\"\n");
         }
         System.out.print("        }");
-    }
-
-    // Extract items from TabularData
-    private static void extractTabularDataItems(final TabularData tds, Set<String> dataItems) {
-        for (Object value: tds.values()) {
-            if (value instanceof TabularData) {
-                extractTabularDataItems(TabularData.class.cast(value), dataItems);
-            } else if (value instanceof CompositeData) {
-                extractCompositeDataItems(CompositeData.class.cast(value), dataItems);
-            } else {
-                System.out.println("Unexpected data in TabularData!");
-                System.exit(1);
-            }
-        }
     }
 
     // Extract items from CompositeData
     private static void extractCompositeDataItems(final CompositeData cds, Set<String> dataItems) {
         CompositeType comp = cds.getCompositeType();
         for (String key: comp.keySet()) {
-            dataItems.add(key);
+            Object value = cds.get(key);
+            if (value instanceof TabularData) {
+                return;
+            } else if (value instanceof CompositeData) {
+                extractCompositeDataItems(CompositeData.class.cast(value), dataItems);
+            } else if (value instanceof SimpleType) {
+                dataItems.add(null);
+            } else {
+                dataItems.add(key);
+            }
         }
     }
 
@@ -271,6 +283,14 @@ public class MBean2JSON {
                             }
 
                             logger.finer("Processing attribute: " + attr.getName());
+
+                            if (compatOnly &&
+                                (attr.getName().equals("BootClassPath") ||
+                                 (mbean.toString().contains("MarkSweep") && attr.getName().equals("LastGcInfo")) ||
+                                 (mbean.toString().contains("Scavenge") && attr.getName().equals("LastGcInfo")))) {
+                                logger.finer("Ignoring " + attr.getName() + " due to unsupported attr type: " + attr.getType());
+                                continue;
+                            }
 
                             Object obj = null;
                             try {
@@ -305,13 +325,10 @@ public class MBean2JSON {
                             }
 
                             // Print the results
-                            if (obj instanceof TabularData) {
-                                Set<String> dataItems = new HashSet<String>();
-                                TabularData tds = TabularData.class.cast(obj);
-                                extractTabularDataItems(tds, dataItems);
-                                for (String item: dataItems) {
-                                    printMetricData(mbean, attr, item);
-                                }
+                            if (obj instanceof ObjectName) {
+                                continue;
+                            } else if (obj instanceof TabularData) {
+                                continue;
                             } else if (obj instanceof CompositeData) {
                                 Set<String> dataItems = new HashSet<String>();
                                 CompositeData cds = CompositeData.class.cast(obj);
@@ -320,6 +337,9 @@ public class MBean2JSON {
                                     printMetricData(mbean, attr, item);
                                 }
                             } else {
+                                if (compatOnly && obj.getClass().isArray()) {
+                                    continue;
+                                }
                                 printMetricData(mbean, attr, null);
                             }
                         }

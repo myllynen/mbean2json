@@ -18,7 +18,9 @@ The tool has been tested with OpenJDK 1.8 running HelloWorld, Tomcat
 remote HTTP protocol.)
 
 The [example.txt](example.txt) file is the output when run against an
-OpenJDK 1.8 JVM running a HelloWorld type program.
+OpenJDK 1.8 JVM running a HelloWorld type program. The _--compat-only_
+option is currently needed as Parfait does not support all the data
+types used for JVM JMX metrics (or for other components, like WildFly).
 
 ```
 $ javac MBean2JSON.java
@@ -27,15 +29,18 @@ $ java -Dcom.sun.management.jmxremote=true \
        -Dcom.sun.management.jmxremote.authenticate=false \
        -Dcom.sun.management.jmxremote.local.only=true \
        -Dcom.sun.management.jmxremote.port=9875 \
-       -Dcom.sun.management.jmxremote.ssl=false HelloWorld &
-$ java MBean2JSON > example.txt
+       -Dcom.sun.management.jmxremote.ssl=false \
+       HelloWorld &
+$ java MBean2JSON --compat-only > example.txt
 ```
 
 ## Future Directions
 
 None; the tool should be either merged into Parfait or Parfait should
-provide similar functionality out of the box. Please refer to PCP/Parfait
-pages for more information and latest status updates.
+provide similar functionality out of the box.
+
+Please refer to PCP/Parfait pages for more information and latest status
+updates.
 
 ## License
 
